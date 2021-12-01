@@ -1,8 +1,7 @@
 import pathlib
 
 with open(pathlib.Path(__file__).parent / "input.txt") as infile:
-    indata = infile.readlines()
-data = [int(item) for item in indata]
+    data = [int(item) for item in infile.readlines()]
 
 memo = None
 counter = 0
