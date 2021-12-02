@@ -21,7 +21,7 @@ def handle_command(cmd: str, depth, h_pos, aim=None) -> Tuple:
         else:
             depth += amt
     else:
-        raise RuntimeError("Woopsy")
+        raise RuntimeError("Out of Cheese Error. Redo From Start")
     return (depth, h_pos, aim)
 
 
