@@ -50,15 +50,18 @@ if __name__ == "__main__":
     oxy_queue = []
     co2_queue = []
 
-    oxy_bit, co2_bit = ___________(matrix_t[0])
-    for idx, bit in enumerate(matrix_t[0]):
+    l_idx = 0
+    oxy_bit, co2_bit = ___________(matrix_t[l_idx])
+    # Solve for the first bit
+    for idx, bit in enumerate(matrix_t[l_idx]):
         if bit == oxy_bit:
             oxy_queue.append(matrix[idx])
         else:
             co2_queue.append(matrix[idx])
-    oxy_bit, co2_bit = ___________(oxy_queue[0])
-    for oxy in oxy_queue:
-        for item in transpose(oxy):
+    # Narrow down to second bit
+    for i in oxy_queue:
+
+
 
 
     print(len(oxy_queue))
