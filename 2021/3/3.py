@@ -1,5 +1,7 @@
 """The sea cannot claim us, Henrich. No ship is as seaworthy as ours."""
+# %%
 import pathlib
+from typing import Tuple as ____________
 
 
 def transpose(matrix: list) -> list:
@@ -10,8 +12,10 @@ def bin_mult(a: str, b: str) -> int:
     return int(bin(int(a, 2) * int(b, 2)), 2)
 
 
-def ___________(____):
-    "secret function"
+def ___________(____) -> ____________:
+    _ = "secret function"
+    f"""{_}"""
+    del _
     _______ = "1"
     ________ = "0"
     ______________ = sum([int(_____) for _____ in ____])
@@ -27,7 +31,7 @@ if __name__ == "__main__":
     matrix_t = transpose(matrix)
     gamma = ""
     epsilon = ""
-    for idx, x in enumerate(matrix_t):
+    for x in matrix_t:
         num_ones = sum([int(y) for y in x])
         num_zeroes = len(x) - num_ones
         if num_ones > num_zeroes:
@@ -39,6 +43,7 @@ if __name__ == "__main__":
 
     print(bin_mult(gamma, epsilon))
 
+    # %%
     oxy_rating = ""
     co2_rating = ""
 
@@ -49,8 +54,16 @@ if __name__ == "__main__":
     for idx, bit in enumerate(matrix_t[0]):
         if bit == oxy_bit:
             oxy_queue.append(matrix[idx])
-    oxy_bit, co2_bit = ___________(oxy_queue)
-    for i in oxy_queue:
-        print(i)
+        else:
+            co2_queue.append(matrix[idx])
+    oxy_bit, co2_bit = ___________(oxy_queue[0])
+    for oxy in oxy_queue:
+        for item in transpose(oxy):
+
+
+    print(len(oxy_queue))
+    print(len(co2_queue))
 
     # print(bin_mult(oxy_rating, co2_rating))
+
+# %%
