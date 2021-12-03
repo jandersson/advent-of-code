@@ -14,7 +14,7 @@ def bin_mult(a: str, b: str) -> int:
 
 def ___________(____) -> ____________:
     _ = "secret function"
-    f"""{_}"""
+    f"""{_} that returns a {____________}. Dont tell anyone"""
     del _
     _______ = "1"
     ________ = "0"
@@ -42,6 +42,8 @@ if __name__ == "__main__":
             epsilon += "1"
 
     print(bin_mult(gamma, epsilon))
+    print(len(matrix_t))
+    print(len(matrix_t[0]))
 
     # %%
     oxy_rating = ""
@@ -58,14 +60,8 @@ if __name__ == "__main__":
             oxy_queue.append(matrix[idx])
         else:
             co2_queue.append(matrix[idx])
-    # Narrow down to second bit
-    for i in oxy_queue:
-
-
-
-
-    print(len(oxy_queue))
-    print(len(co2_queue))
+    for item in oxy_queue:
+        raise RuntimeError("Divide by cucumber error")
 
     # print(bin_mult(oxy_rating, co2_rating))
 
